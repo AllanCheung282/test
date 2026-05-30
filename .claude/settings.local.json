@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "PowerShell($sysInfo = Get-CimInstance Win32_ComputerSystem; $os = Get-CimInstance Win32_OperatingSystem; $cpu = Get-CimInstance Win32_Processor; $gpu = Get-CimInstance Win32_VideoController; $mem = Get-CimInstance Win32_PhysicalMemory | Measure-Object -Property Capacity -Sum; $disk = Get-CimInstance Win32_LogicalDisk -Filter \"DeviceID='C:'\"; Write-Host \"Manufacturer: $\\($sysInfo.Manufacturer\\)\"; Write-Host \"Model: $\\($sysInfo.Model\\)\"; Write-Host \"Total RAM: $\\([math]::Round\\($mem.Sum/1GB, 1\\)\\) GB\"; Write-Host \"CPU: $\\($cpu.Name.Trim\\(\\)\\)\"; Write-Host \"Cores: $\\($cpu.NumberOfCores\\), Logical: $\\($cpu.NumberOfLogicalProcessors\\)\"; Write-Host \"OS: $\\($os.Caption\\)\"; Write-Host \"Disk C: Size: $\\([math]::Round\\($disk.Size/1GB,1\\)\\) GB, Free: $\\([math]::Round\\($disk.FreeSpace/1GB,1\\)\\) GB\"; foreach \\($g in $gpu\\) { Write-Host \"GPU: $\\($g.Name\\) \\($\\($g.AdapterRAM/1MB\\) MB\\)\" })",
+      "PowerShell(node --version 2>$null; npm --version 2>$null; git --version 2>$null; python --version 2>$null; if \\(Test-Path \"$env:APPDATA\\\\Code\\\\User\\\\extensions.json\"\\) { \\(Get-Content \"$env:APPDATA\\\\Code\\\\User\\\\extensions.json\" -Encoding UTF8 | ConvertFrom-Json\\) | Select-Object -ExpandProperty Name 2>$null } elseif \\(Test-Path \"$env:USERPROFILE\\\\.vscode\\\\extensions\"\\) { Get-ChildItem \"$env:USERPROFILE\\\\.vscode\\\\extensions\" -Directory | Select-Object Name })",
+      "PowerShell(python --version 2>$null)",
+      "PowerShell(pip --version 2>$null)",
+      "PowerShell(python --version 2>&1)",
+      "PowerShell(python -c \"import sys; print\\(sys.executable\\)\" 2>&1)",
+      "PowerShell(Get-ChildItem \"$env:USERPROFILE\\\\.vscode\\\\extensions\" -Directory | Select-Object Name)",
+      "PowerShell(winget install --id Git.Git -e --source winget --silent --accept-source-agreements --accept-package-agreements)",
+      "PowerShell(ssh -vT git@github.com 2>&1)",
+      "PowerShell(ssh -T git@github.com 2>&1)",
+      "PowerShell(winget install --id GitHub.cli -e --source winget --silent --accept-source-agreements --accept-package-agreements)"
+    ]
+  }
+}
