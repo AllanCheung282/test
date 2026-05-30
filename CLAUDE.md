@@ -34,7 +34,7 @@
 - **npm**: v11.13.0
 - **Git**: v2.54.0 (SSH key configured for GitHub)
 - **GitHub CLI**: v2.93.0
-- **Python**: NOT installed
+- **Python**: 3.13.13 (Microsoft Store, venv at `venv/`)
 - **Package Manager**: npm (no pnpm/yarn yet)
 
 ## 📁 Project Structure
@@ -78,7 +78,7 @@ This is Windows PowerShell 5.1 — NOT PowerShell Core:
 3. ⬜ Organize Desktop and Documents folders
 4. ⬜ Set up first real project (likely React/Next.js or Node.js CLI)
 5. ⬜ Learn /review, /simplify, memory system
-6. ⬜ Install Python for scripting/automation
+6. ✅ Install Python for scripting/automation
 
 ## 📝 Working Conventions
 

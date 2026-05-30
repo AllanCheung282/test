@@ -12,7 +12,12 @@
       "PowerShell(winget install --id Git.Git -e --source winget --silent --accept-source-agreements --accept-package-agreements)",
       "PowerShell(ssh -vT git@github.com 2>&1)",
       "PowerShell(ssh -T git@github.com 2>&1)",
-      "PowerShell(winget install --id GitHub.cli -e --source winget --silent --accept-source-agreements --accept-package-agreements)"
+      "PowerShell(winget install --id GitHub.cli -e --source winget --silent --accept-source-agreements --accept-package-agreements)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(clip)",
+      "PowerShell(winget search python --source msstore 2>&1)",
+      "PowerShell(winget install --id 9PNRBTZXMB4Z --source msstore --silent --accept-source-agreements --accept-package-agreements)"
     ]
   }
 }

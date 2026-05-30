@@ -1,4 +1,9 @@
-﻿# Dependencies
+﻿# Python
+venv/
+__pycache__/
+*.pyc
+
+# Dependencies
 node_modules/
 
 # IDE
