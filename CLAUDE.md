@@ -74,11 +74,19 @@ This is Windows PowerShell 5.1 — NOT PowerShell Core:
 ## 🎯 Current Goals
 
 1. ✅ Install Git + configure GitHub SSH
-2. 🔄 Create CLAUDE.md (this file)
-3. ⬜ Organize Desktop and Documents folders
-4. ⬜ Set up first real project (likely React/Next.js or Node.js CLI)
-5. ⬜ Learn /review, /simplify, memory system
+2. ✅ Create CLAUDE.md (this file)
+3. ✅ Organize Documents folder (deleted MAXON/Cinebench, created 学习/)
+4. ✅ Build hardware monitor widget (`hardware_monitor.py`)
+5. ⬜ Set up a web project (React/Next.js or Node.js CLI)
 6. ✅ Install Python for scripting/automation
+
+## 🖥️ Projects
+
+### `hardware_monitor.py` — Desktop Hardware Monitor
+- Real-time CPU, GPU, RAM, disk, network monitoring
+- Dark theme, always-on-top, minimizes to system tray
+- `psutil` + PowerShell perf counters for GPU data
+- Run: `python hardware_monitor.py`
 
 ## 📝 Working Conventions
 

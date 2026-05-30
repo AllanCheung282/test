@@ -17,7 +17,9 @@
       "Bash(git commit *)",
       "Bash(clip)",
       "PowerShell(winget search python --source msstore 2>&1)",
-      "PowerShell(winget install --id 9PNRBTZXMB4Z --source msstore --silent --accept-source-agreements --accept-package-agreements)"
+      "PowerShell(winget install --id 9PNRBTZXMB4Z --source msstore --silent --accept-source-agreements --accept-package-agreements)",
+      "Bash(node --check /c/Users/horro/Documents/trae_projects/test/github-zh-cn.user.js)",
+      "Bash(git clone *)"
     ]
   }
 }
