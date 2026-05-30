@@ -9,8 +9,7 @@
 - ✅ **动态支持** — 监听页面变化，GitHub SPA 导航也会自动翻译
 - ✅ **智能跳过** — 不翻译代码块、哈希值、文件路径、命令等
 - ✅ **翻译缓存** — 已翻译内容缓存 1 小时，减少请求
-- ✅ **暗色模式** — 自动适配 GitHub 暗色主题
-- ✅ **暗色模式适配** — 按钮样式跟随 GitHub 主题变化
+- ✅ **暗色模式** — 按钮样式跟随 GitHub 主题自动变化
 
 ## 📥 安装方法
 
@@ -18,11 +17,13 @@
 
 | 浏览器 | 安装链接 |
 |--------|----------|
+| **Chrome** 🏠 | [Chrome 网上应用店](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
 | **Edge** | [Edge 加载项商店](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
-| **Chrome** | [Chrome 网上应用店](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
 | **Firefox** | [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/tampermonkey/) |
 
-> ⚠️ 如果你在国内无法访问 Chrome 商店，可以用 Edge 浏览器安装，或搜索「篡改猴」离线安装包。
+> ⚠️ 由于国内网络限制，Chrome 商店可能打不开。如果无法访问，有两种替代方案：
+> 1. 用 **Edge 浏览器**打开 Edge 商店链接安装（Edge 商店国内通常可直接访问）
+> 2. 搜索 **「篡改猴」**（Tampermonkey 中文名）下载 `.crx` 离线安装包，拖入 `chrome://extensions/` 页面安装
 
 ### 第二步：安装脚本
 
@@ -88,8 +89,8 @@ const CONFIG = {
 
 | 浏览器 | 支持情况 | 备注 |
 |--------|----------|------|
-| Edge | ✅ | 推荐，Tampermonkey 可直接安装 |
-| Chrome | ✅ | 需要能访问 Chrome 商店 |
+| Chrome | ✅ | 🏠 推荐，你的默认浏览器 |
+| Edge | ✅ | 商店国内可直接访问 |
 | Firefox | ✅ | 完全支持 |
 | Safari | ⚠️ | 需安装 Tampermonkey for Safari |
 
